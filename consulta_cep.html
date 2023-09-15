@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP</title>
+    <link rel="stylesheet" href="estilo_cep.css">
+</head>
+<body>
+    <section>
+        <div id="dado">
+            <h1><strong>Consulta CEP</strong></h1>
+            <input type="text" name="cep" id="txtcep" placeholder="Digite o CEP" maxlength="9"><br><br>
+            <input type="button" value="Consultar" id="bttn1" onclick="pesquisacep()">
+            <input type="button" value="Limpar" id="bttn2" onclick="limpar()">
+        </div>
+        <br>
+
+        <div id="res"  style="display: none">
+            <ul id="resposta" type="square" >
+                <li id="ncep">CEP: </li> 
+                <li id="end">Endereço: </li>  
+                <li id="bair">Bairro: </li>
+                <li id="cid">Cidade: </li>
+                <li id="est">Estado: </li>
+            </ul>    
+        </div>
+        <br>
+        
+        <footer>Made by: Carolina Koike</footer>
+    </section>
+    <script src="js_cep.js"></script>
+</body>
+</html>
